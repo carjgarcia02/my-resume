@@ -1,12 +1,12 @@
 
-const setDarkMode = () => {
+const setDarkTheme = () => {
 
-    if(document.body.style.color !== "white" && document.body.style.backgroundColor !== "black"){
-        document.body.style.color = "white";
-        document.body.style.backgroundColor = "black";
-    }else{
-        document.body.style.color = "black";
-        document.body.style.backgroundColor = "white";
-    }
+    let icon = document.getElementById("icon");
     
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "./img/sun.png";
+    } else {
+        icon.src = "./img/moon.jpg";
+    }
 }

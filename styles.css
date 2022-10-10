@@ -1,16 +1,37 @@
+:root {
+    --bg-color: #f3f5f9;
+    --font-color: #010712;    
+}
+
 body {
     box-sizing: border-box;
     padding: 0 5% 0;
     font-family: Tahoma;
     font-size: 14px;
-    text-align: justify;  
+    text-align: justify;
+    color: var(--font-color);
+    background-color: var(--bg-color);  
 }
 
+.dark-theme {
+    color: var(--bg-color);
+    background-color: var(--font-color);
+}
+
+#icon {
+    width: 40px;
+    height: 40px;
+}
 
 h1 {
     font-size: 37px;
     letter-spacing: 2px;
     margin-bottom: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .info {
@@ -65,7 +86,6 @@ footer {
 
 @media (min-width: 640px) {
     .info {
-        background-color: red;
         display: flex;
     }
 }
@@ -73,7 +93,6 @@ footer {
 @media (min-width: 769px) {
     body {
         padding: 0 10% 0;
-        background-color: blue;
     }
 }
 
@@ -81,6 +100,5 @@ footer {
     body {
         display: flex;
         flex-direction: column;
-        background-color: bisque;
     }
 }
