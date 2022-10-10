@@ -13,6 +13,10 @@ body {
     background-color: var(--bg-color);  
 }
 
+#cv-carlos {
+    margin: auto;
+}
+
 .dark-theme {
     color: var(--bg-color);
     background-color: var(--font-color);
@@ -91,7 +95,7 @@ li abbr, li span {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 /* Responsive */
@@ -121,7 +125,6 @@ footer {
         display: flex;
         flex-direction: column;
     }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -142,12 +145,6 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body {
-        padding: 0 6% 0;
-        display:flex;
-        flex-direction: column;
-    }
-
     h1 {
         color: blue;
     }
@@ -157,13 +154,8 @@ footer {
         flex-direction: row;
     }
 
-    .info span {
-        display: inline;
-    }
-
     #cv-carlos {
-        width: 100%;
-        align-self: center;   
+        width: 100%;   
     }
 }
 
@@ -174,8 +166,7 @@ footer {
     }
 
     #cv-carlos {
-        width: 75%;
-        align-self: center;   
+        width: 75%;        
     }
 }
 
@@ -186,7 +177,6 @@ footer {
     }
 
     #cv-carlos {
-        width: 60%;
-        align-self: center;   
+        width: 60%;   
     }   
 }
