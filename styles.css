@@ -1,0 +1,86 @@
+body {
+    box-sizing: border-box;
+    padding: 0 5% 0;
+    font-family: Tahoma;
+    font-size: 14px;
+    text-align: justify;  
+}
+
+
+h1 {
+    font-size: 37px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.info {
+    line-height: 6px;
+}
+
+.titles {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+section {
+    margin-top: 18px;
+}
+
+#skills-list {
+    column-count: 2;
+    column-gap: 80px;
+    margin-left: 8px;
+}
+
+ul {
+    margin-left: 8px;
+}
+
+li abbr, li span {
+    position: relative;
+    left: 6px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+    .info {
+        background-color: red;
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        padding: 0 10% 0;
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: bisque;
+    }
+}
